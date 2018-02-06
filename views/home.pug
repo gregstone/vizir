@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    section
+    .container-fluid.bg
+      .row
+        .col-xs-12.text-center.bghomepage
+          .col-sm-6.col-sm-offset-3
+            h1.items-home
+              | Bienvenue
+            p.textHome Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus, arcu non fringilla accumsan, diam elit malesuada orci, vel euismod felis quam id risus. Vestibulum justo lectus, pharetra in condimentum in, rhoncus eget felis. Suspendisse consequat lacus vitae neque eleifend rhoncus. Suspendisse at posuere ante, quis elementum justo. Nullam porta, turpis quis malesuada porttitor, leo massa laoreet nulla, vel dapibus augue ante vitae sapien.
+    
+    .container-fluid.navButtonHome
+        .row
+        div
+            a(href='./team')
+                button(class="btn btn-primary btn-lg").col-xs-offset-3.col-xs-2  Team
+            a(href='./pricing')
+                button(class="btn btn-primary btn-lg").col-xs-2  Pricing
+            a(href='./contact')
+                button(class="btn btn-primary btn-lg").col-xs-2 Contact

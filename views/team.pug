@@ -1,0 +1,38 @@
+extends layout
+
+block content
+   
+    section
+
+    table.table.table-striped.table-bordered
+        thead
+            tr
+            th 
+            th(scope='col') Chatbot A
+            th(scope='col') Chatbot B
+            th(scope='col') Chatbot C
+
+        tbody
+            tr
+            th Description
+            td DESCRIPTION A
+            td DESCRIPTION B
+            td DESCRIPTION C
+            tr
+            th Photo
+            td
+                img(src="/images/robotA.png" alt="robot A" height="50")
+ 
+            td
+                img(src="/images/robotB.png" alt="robot B" height="50") 
+            td
+                img(src="/images/robotC.png" alt="robot C" height="50")
+            tr
+            th Linkedin
+            td 
+                a(target="_blank" href="https://www.linkedin.com/feed/" alt="linkedin chatbot A" class="btn btn-primary") Linkedin A
+            td
+                a(target="_blank" href="https://www.linkedin.com/feed/" alt="linkedin chatbot B " class="btn btn-primary") Linkedin B
+            td
+                a(target="_blank" href="https://www.linkedin.com/feed/" alt="linkedin chatbot C " class="btn btn-primary") Linkedin C
+            tr

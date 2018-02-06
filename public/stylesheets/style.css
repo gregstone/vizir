@@ -1,0 +1,48 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.logo{
+  height: 50px;
+  width: 50px; 
+}
+
+.bg{
+padding: 0px;
+}
+
+.noMargin{
+  margin-bottom: 0px;
+}
+
+.bghomepage {
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+  margin-left: 0px;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+}
+
+.items-home {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.textHome{
+  font-size:20px;
+}
+
+.navButtonHome{
+  margin-top: 60px;
+  margin-bottom: 120px;
+}

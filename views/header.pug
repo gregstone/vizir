@@ -1,0 +1,19 @@
+body
+  nav.navbar.navbar-inverse.noMargin
+    .container-fluid
+      .navbar-header.col-xs-1
+        img.logo(href= '/home' src='/images/vizir2.png', alt='vizir logo')
+      ul.nav.navbar-nav.col-xs-5
+        li
+          a(href='/') Home
+        li
+          a(href='/team') Team
+        li
+          a(href='/pricing') Pricing
+        li
+          a(href='/contact') Contact
+      form.navbar-form.navbar-left
+        input.form-control.mr-sm-2(type='text', placeholder='Login')
+        input.form-control.mr-sm-2(type='text', placeholder='Password')
+        button.btn.btn-outline-success.my-2.my-sm-0(type='submit') signin
+

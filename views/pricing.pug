@@ -1,0 +1,33 @@
+extends layout
+
+block content 
+    link(href='https://fonts.googleapis.com/css?family=Oswald:400,700,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/priceSimulator.css')
+    
+    .wrapper
+        h1.wrapperTitle Simulateur de prix
+        h4 Calculer le prix total de vos envois d'emails grâce à ce simulateur 
+        p Prix dégressif en fonction de la quantitée. 
+        br
+        br
+        p Sélectionner le nombre d'emails à envoyer à l'aide du slider ci dessous
+        form.priceSimulator    
+            .simulatorRow
+            label(for='tip')
+                | Nombre d'emails: 
+                span.emailNumber
+            .container-fluid
+            .row
+            p.numberRange.col-xs-1 0
+
+            p.numberRange.maxNumber.col-xs-offset-11 20 000
+            input#tip.sliderNumber(type='range', min='0', max='20000', value='0', step='1', required='')
+            
+            .simulatorRow
+            h2
+                | Prix total : 
+                span.totalPrice
+
+        
+    script(src='https://code.jquery.com/jquery-2.1.3.min.js')
+    script(src='/javascripts/priceSimulator.js')

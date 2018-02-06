@@ -1,0 +1,31 @@
+extends layout
+
+block content 
+
+    h1 Nous Contacter 
+    br
+    br
+    form(method='POST')
+      
+      .form-group
+        // first name
+        label.control-label(for='firstName') First name
+        input#name.form-control(name='name', type='text')
+      
+      .form-group
+        // last name
+        label.control-label(for='firstName') last name
+        input#name.form-control(name='lastName', type='text')
+      
+      .form-group
+        // Email
+        label.control-label(for='email') Email
+        input#email.form-control(name='email', type='text')
+      
+      .form-group
+        // Message
+        label.control-label(for='message') Message
+        textarea#message.form-control(cols='40', name='message', rows='10')
+      
+      .form-group
+        button.btn.btn-primary(type='submit') Submit
